@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Alatsi&family=Black+Han+Sans&family=Pontano+Sans:wght@300;600;700&family=Ramabhadra&display=swap');
+
+.carousel-inner {
+    height: 65vh;
+    background-position: center center;
+    background-color: #000;
+}
+
+.card-img-top{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    margin-top: 10px;
+    
+}
+
+.card-img-top:hover{
+    transform: scale(1.05);
+    transition: transform .2s;
+
+}
+
+.card-title {
+    font-family: 'Alatsi', sans-serif;
+    color: #565656;
+    font-size: 12px;
+    padding: 1;
+}
+
+h1 {
+    font-family: 'Black Han Sans', sans-serif;
+    font-size: 30px;
+    color: rgb(1, 5, 29);
+
+}
+
+.navbar {
+    background-color: rgb(1, 5, 29);
+    color: gray;
+}
+
+.nosotros{
+    background-color: #000429;
+    color: gray;
+}
+
+.nav-link{
+    color: gray;
+}
+
+body{
+    font-family: 'Alatsi', sans-serif;
+  background-image: radial-gradient(ellipse farthest-corner at 45px 30px , #fff 50%, rgba(0, 255, 0, 0) 0%, #000429 50%);
+}
+
+.btn-primary{
+    background-color: #565656;
+    border: none;
+}
+
+.nav-link:hover{
+    color: white;
+}
+
+.navbar-brand:hover{
+    color: white;
+}
+.btn-primary:hover{
+    background-color: #001a8d;
+}
+
+.navbar-brand{
+    color: gray;
+}
+
+.me-2{
+    width: 70px;
+}
+
+.w-100{
+        width: 150px;
+}
+
+.nosotros{
+    padding: 10px;
+}
+
+.redes a i:hover{
+    color: #001a8d;
+}
