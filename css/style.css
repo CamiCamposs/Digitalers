@@ -42,6 +42,7 @@ h1 {
 .nosotros{
     background-color: #000429;
     color: gray;
+    font: bold;
 }
 
 .nav-link{
