@@ -5,8 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Proyecto Integrador - Etapa 1</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
-
-    <link rel="stylesheet" href="" type="">
   </head>
   <body>
     <header>
@@ -32,9 +30,33 @@
               </div>
             
             <div class="d-flex">
-              <a href="pages/carrito.html" class="text-reset me-3">
+              <div class="dropdown dropstart">
+                <a type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <i class="fas fa-cart-shopping"></i>
+                </a>
+                <ul id="carrito" class="dropdown-menu mx-2">
+                  <table id="lista-carrito" class="table">
+                    <thead>
+                      <tr>
+                        <th scope="col">Imagen</th>
+                        <th scope="col">Nombre</th>
+                        <th scope="col">Precio</th>
+                        <th></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr></tr>
+                    </tbody>
+                  </table>
+                  <div class="d-grid gap-2 d-md-block justify-content-md-center ms-1">
+                    <button id="vaciar-carrito" class="btn btn-primary">Vaciar Carrito</button>
+                    <button id="procesar-pedido" class="btn btn-danger">Procesar Compra</button>
+                  </div>
+                </ul>
+              </div>
+              <!--<a href="pages/carrito.html" class="text-reset me-3">
                 <i class="fas fa-cart-shopping"></i>
-              </a>
+              </a> -->
             </div>
 
           </div>
@@ -123,7 +145,7 @@
         </div>
       </section>
 
-      <section class="row my-5">
+      <section id="lista-productos" class="row my-5">
         <h1>Novedades</h1>
         <div class="card col-2 m-3 shadow-sm">
           <img src="img/AlaskaSinTi.jpg" class="card-img-top" alt="...">
@@ -131,10 +153,10 @@
             <h5 class="card-title text-uppercase">Alaska sin ti</h5>
             <ul class="list-unstyled mt-3 mb-4">
               <li class="list-group-item text-uppercase">Autor</li>
-              <li class="list-group-item">Precio</li>
+              <li class="list-group-item precio">9873</li>
               <li class="list-group-item">Editorial</li>
             </ul>
-            <a href="#" class="btn btn-primary">Agregar al carrito</a>
+            <a href="#" class="btn btn-primary agregar-carrito" data-id ="1">Agregar al carrito</a>
           </div>
         </div> <!-- .card -->
 
@@ -144,10 +166,10 @@
             <h5 class="card-title text-uppercase" >Todos nuestros veranos</h5>
             <ul class="list-unstyled mt-3 mb-4">
               <li class="list-group-item ">Autor</li>
-              <li class="list-group-item">Precio</li>
+              <li class="list-group-item precio">9875</li>
               <li class="list-group-item">Editorial</li>
             </ul>
-            <a href="#" class="btn btn-primary">Agregar al carrito</a>
+            <a href="#" class="btn btn-primary agregar-carrito" data-id ="2">Agregar al carrito</a>
           </div>
         </div> <!-- .card -->
 
@@ -157,10 +179,10 @@
             <h5 class="card-title text-uppercase">Belleza oscura</h5>
             <ul class="list-unstyled mt-3 mb-4">
               <li class="list-group-item text-uppercase">Autor</li>
-              <li class="list-group-item">Precio</li>
+              <li class="list-group-item precio">3571</li>
               <li class="list-group-item">Editorial</li>
             </ul>
-            <a href="#" class="btn btn-primary">Agregar al carrito</a>
+            <a href="#" class="btn btn-primary agregar-carrito" data-id ="3">Agregar al carrito</a>
           </div>
         </div> <!-- .card -->
 
@@ -170,10 +192,10 @@
             <h5 class="card-title text-uppercase">Cada herida</h5>
             <ul class="list-unstyled mt-3 mb-4">
               <li class="list-group-item text-uppercase">Autor</li>
-              <li class="list-group-item">Caracteristicas</li>
+              <li class="list-group-item precio">32165</li>
               <li class="list-group-item">Editorial</li>
             </ul>
-            <a href="#" class="btn btn-primary">Agregar al carrito</a>
+            <a href="#" class="btn btn-primary agregar-carrito" data-id ="4">Agregar al carrito</a>
           </div>
         </div> <!-- .card -->
 
@@ -183,10 +205,10 @@
             <h5 class="card-title text-uppercase">En tierrar lejanas</h5>
             <ul class="list-unstyled mt-3 mb-4">
               <li class="list-group-item text-uppercase">Autor</li>
-              <li class="list-group-item">Precio</li>
+              <li class="list-group-item precio">6871</li>
               <li class="list-group-item">Editorial</li>
             </ul>
-            <a href="#" class="btn btn-primary">Agregar al carrito</a>
+            <a href="#" class="btn btn-primary agregar-carrito" data-id ="5">Agregar al carrito</a>
           </div>
         </div> <!-- .card -->
       </section>
@@ -199,10 +221,10 @@
             <h5 class="card-title">Alaska sin ti</h5>
             <ul class="list-unstyled mt-3 mb-4">
               <li class="list-group-item text-uppercase">Autor</li>
-              <li class="list-group-item">Precio</li>
+              <li class="list-group-item precio">3246</li>
               <li class="list-group-item">Editorial</li>
             </ul>
-            <a href="#" class="btn btn-primary">Agregar al carrito</a>
+            <a href="#" class="btn btn-primary agregar-carrito" data-id ="6">Agregar al carrito</a>
           </div>
         </div> <!-- .card -->
 
@@ -212,10 +234,10 @@
             <h5 class="card-title">Todos nuestros veranos</h5>
             <ul class="list-unstyled mt-3 mb-4">
               <li class="list-group-item text-uppercase">Autor</li>
-              <li class="list-group-item">Precio</li>
+              <li class="list-group-item precio">321</li>
               <li class="list-group-item">Editorial</li>
             </ul>
-            <a href="#" class="btn btn-primary">Agregar al carrito</a>
+            <a href="#" class="btn btn-primary agregar-carrito" data-id ="7">Agregar al carrito</a>
           </div>
         </div> <!-- .card -->
 
@@ -225,10 +247,10 @@
             <h5 class="card-title">Belleza oscura</h5>
             <ul class="list-unstyled mt-3 mb-4">
               <li class="list-group-item text-uppercase">Autor</li>
-              <li class="list-group-item">Precio</li>
+              <li class="list-group-item precio">1231</li>
               <li class="list-group-item">Editorial</li>
             </ul>
-            <a href="#" class="btn btn-primary">Agregar al carrito</a>
+            <a href="#" class="btn btn-primary agregar-carrito" data-id ="8">Agregar al carrito</a>
           </div>
         </div> <!-- .card -->
 
@@ -238,10 +260,10 @@
             <h5 class="card-title text-uppercase">Cada herida</h5>
             <ul class="list-unstyled mt-3 mb-4">
               <li class="list-group-item text-uppercase">Autor</li>
-              <li class="list-group-item">Caracteristicas</li>
+              <li class="list-group-item precio">2135</li>
               <li class="list-group-item">Editorial</li>
             </ul>
-            <a href="#" class="btn btn-primary">Agregar al carrito</a>
+            <a href="#" class="btn btn-primary agregar-carrito" data-id ="9">Agregar al carrito</a>
           </div>
         </div>
 
@@ -251,10 +273,10 @@
             <h5 class="card-title text-uppercase">En tierrar lejanas</h5>
             <ul class="list-unstyled mt-3 mb-4">
               <li class="list-group-item text-uppercase">Autor</li>
-              <li class="list-group-item">Precio</li>
+              <li class="list-group-item precio">Precio</li>
               <li class="list-group-item">Editorial</li>
             </ul>
-            <a href="#" class="btn btn-primary">Agregar al carrito</a>
+            <a href="#" class="btn btn-primary agregar-carrito" data-id ="10">Agregar al carrito</a>
           </div>
         </div> 
       </section>
@@ -309,9 +331,7 @@
         © 2023 Copyright
       </div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
-
-    <script src="js/bootstrap.min.js"></script>
+    
     <script type="module" src="/main.js"></script>
   </body>
 </html>
