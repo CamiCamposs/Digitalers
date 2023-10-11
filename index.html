@@ -5,8 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Proyecto Integrador - Etapa 1</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.4/dist/sweetalert2.min.css">
+
+    <!-- JS -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.4/dist/sweetalert2.min.js"></script>
+
   </head>
-  <body>
+  <body >
+    
     <header>
       <nav  class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
@@ -28,7 +35,9 @@
                <img src="img/Logo.png" alt="" width="50px">
               </a>
               </div>
-            
+              
+            </li>        
+              
             <div class="d-flex">
               <div class="dropdown dropstart">
                 <a type="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -152,9 +161,9 @@
           <div class="card-body">
             <h5 class="card-title text-uppercase">Alaska sin ti</h5>
             <ul class="list-unstyled mt-3 mb-4">
-              <li class="list-group-item text-uppercase">Autor</li>
+              <li class="list-group-item text-uppercase autor">K.A. Tucker</li>
               <li class="list-group-item precio">9873</li>
-              <li class="list-group-item">Editorial</li>
+              <li class="list-group-item editorial">V&R</li>
             </ul>
             <a href="#" class="btn btn-primary agregar-carrito" data-id ="1">Agregar al carrito</a>
           </div>
@@ -165,9 +174,9 @@
           <div class="card-body">
             <h5 class="card-title text-uppercase" >Todos nuestros veranos</h5>
             <ul class="list-unstyled mt-3 mb-4">
-              <li class="list-group-item ">Autor</li>
+              <li class="list-group-item autor">Carley Fortune</li>
               <li class="list-group-item precio">9875</li>
-              <li class="list-group-item">Editorial</li>
+              <li class="list-group-item editorial">Editorial</li>
             </ul>
             <a href="#" class="btn btn-primary agregar-carrito" data-id ="2">Agregar al carrito</a>
           </div>
@@ -178,9 +187,9 @@
           <div class="card-body">
             <h5 class="card-title text-uppercase">Belleza oscura</h5>
             <ul class="list-unstyled mt-3 mb-4">
-              <li class="list-group-item text-uppercase">Autor</li>
+              <li class="list-group-item autor">Jessica Rivas</li>
               <li class="list-group-item precio">3571</li>
-              <li class="list-group-item">Editorial</li>
+              <li class="list-group-item editorial">Montena</li>
             </ul>
             <a href="#" class="btn btn-primary agregar-carrito" data-id ="3">Agregar al carrito</a>
           </div>
@@ -191,9 +200,9 @@
           <div class="card-body">
             <h5 class="card-title text-uppercase">Cada herida</h5>
             <ul class="list-unstyled mt-3 mb-4">
-              <li class="list-group-item text-uppercase">Autor</li>
+              <li class="list-group-item autor">Maria Border</li>
               <li class="list-group-item precio">32165</li>
-              <li class="list-group-item">Editorial</li>
+              <li class="list-group-item editorial">Plaza & Janes</li>
             </ul>
             <a href="#" class="btn btn-primary agregar-carrito" data-id ="4">Agregar al carrito</a>
           </div>
@@ -204,77 +213,78 @@
           <div class="card-body">
             <h5 class="card-title text-uppercase">En tierrar lejanas</h5>
             <ul class="list-unstyled mt-3 mb-4">
-              <li class="list-group-item text-uppercase">Autor</li>
+              <li class="list-group-item autor">Santa Montefiore</li>
               <li class="list-group-item precio">6871</li>
-              <li class="list-group-item">Editorial</li>
+              <li class="list-group-item editorial">Titania</li>
             </ul>
             <a href="#" class="btn btn-primary agregar-carrito" data-id ="5">Agregar al carrito</a>
           </div>
         </div> <!-- .card -->
       </section>
 
-      <section class="row my-5">
+      <section id="lista-productos2" class="row my-5">
         <h1>Los mas vendidos</h1>
         <div class="card col-2 m-3 shadow-sm">
-          <img src="img/AlaskaSinTi.jpg" class="card-img-top" alt="...">
+          <img src="img/CasaNeville.jpg" class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title">Alaska sin ti</h5>
+            <h5 class="card-title text-uppercase">La casa neville</h5>
             <ul class="list-unstyled mt-3 mb-4">
-              <li class="list-group-item text-uppercase">Autor</li>
+              <li class="list-group-item autor">Florencia bonelli</li>
               <li class="list-group-item precio">3246</li>
-              <li class="list-group-item">Editorial</li>
+              <li class="list-group-item editorial">Planeta</li>
             </ul>
             <a href="#" class="btn btn-primary agregar-carrito" data-id ="6">Agregar al carrito</a>
           </div>
         </div> <!-- .card -->
 
         <div class="card col-2 m-3 shadow-sm">
-          <img src="img/TodosNuestrosVeranos.png" class="card-img-top" alt="...">
+          <img src="img/ElViento.jpg" class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title">Todos nuestros veranos</h5>
+            <h5 class="card-title text-uppercase">El viento conoce mi nombre</h5>
             <ul class="list-unstyled mt-3 mb-4">
-              <li class="list-group-item text-uppercase">Autor</li>
-              <li class="list-group-item precio">321</li>
-              <li class="list-group-item">Editorial</li>
+              <li class="list-group-item autor">Isabel Allende</li>
+              <li class="list-group-item precio">3218</li>
+              <li class="list-group-item editorial">Sudamericana</li>
             </ul>
             <a href="#" class="btn btn-primary agregar-carrito" data-id ="7">Agregar al carrito</a>
           </div>
         </div> <!-- .card -->
 
         <div class="card col-2 m-3 shadow-sm">
-          <img src="img/BellezaOscura.png" class="card-img-top" alt="...">
+          <img src="img/Palabras.jpg" class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title">Belleza oscura</h5>
+            <h5 class="card-title text-uppercase">El poder de las palabras</h5>
             <ul class="list-unstyled mt-3 mb-4">
-              <li class="list-group-item text-uppercase">Autor</li>
+              <li class="list-group-item autor">Mariano Sigman</li>
               <li class="list-group-item precio">1231</li>
-              <li class="list-group-item">Editorial</li>
+              <li class="list-group-item editorial">Debate</li>
             </ul>
             <a href="#" class="btn btn-primary agregar-carrito" data-id ="8">Agregar al carrito</a>
           </div>
         </div> <!-- .card -->
 
         <div class="card col-2 m-3 shadow-sm">
-          <img src="img/CadaHerida.png" class="card-img-top" alt="...">
+          <img src="img/armame.jpg" class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title text-uppercase">Cada herida</h5>
+            <h5 class="card-title text-uppercase">
+              A(R)MAME</h5>
             <ul class="list-unstyled mt-3 mb-4">
-              <li class="list-group-item text-uppercase">Autor</li>
+              <li class="list-group-item autor">Luz Larenn</li>
               <li class="list-group-item precio">2135</li>
-              <li class="list-group-item">Editorial</li>
+              <li class="list-group-item editorial">El ateneo</li>
             </ul>
             <a href="#" class="btn btn-primary agregar-carrito" data-id ="9">Agregar al carrito</a>
           </div>
         </div>
 
         <div class="card col-2 m-3 shadow-sm">
-          <img src="img/EnTierras.png" class="card-img-top" alt="...">
+          <img src="img/elArte.jpg" class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title text-uppercase">En tierrar lejanas</h5>
+            <h5 class="card-title text-uppercase">EL ARTE DE AMAR</h5>
             <ul class="list-unstyled mt-3 mb-4">
-              <li class="list-group-item text-uppercase">Autor</li>
-              <li class="list-group-item precio">Precio</li>
-              <li class="list-group-item">Editorial</li>
+              <li class="list-group-item autor">Erich Afromm</li>
+              <li class="list-group-item precio">1324</li>
+              <li class="list-group-item editorial">Booket</li>
             </ul>
             <a href="#" class="btn btn-primary agregar-carrito" data-id ="10">Agregar al carrito</a>
           </div>
@@ -333,5 +343,6 @@
     </footer>
     
     <script type="module" src="/main.js"></script>
+
   </body>
 </html>

@@ -4,67 +4,18 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
-    <title>Proyecto Integrador - Etapa 1 (Carrito)</title>
+    <title>Proyecto Integrador - Etapa 2 (Carrito)</title>
   </head>
   <body>
 
     <header>
       <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
-            <form class="d-flex w-25">
-              <input
-                type="search"
-                class="form-control rounded"
-                placeholder="Search"
-                aria-label="Search"
-                aria-describedby="search-addon"
-              />
-              <span class="input-group-text border-0" id="search-addon">
-                <i class="fas fa-search"></i>
-              </span>
-            </form>
-
-            <div class="d-flex justify-content-center align-items-center">
+            <div class="d-flex justify-content-center align-items-center flex-grow-1">
               <a href="../index.html" title>
                <img src="../img/Logo.png" alt="" width="50px">
               </a>
               </div>
-          </div>
-        </div>
-      </nav>
-      <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">CATEGORIAS</a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-mdb-toggle="collapse"
-            data-mdb-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <i class="fas fa-bars"></i>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav mx-auto">
-              <li class="nav-item">
-                <a class="nav-link" href="#">Ficcion</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Literatura</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Infantiles</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Juveniles</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Desarrollo personal</a>
-              </li>
-          
-            </ul>
           </div>
         </div>
       </nav>
@@ -77,47 +28,11 @@
           <div class="col-8">
             <div class="card mb-4">
               <div class="card-header py-4">
-                <h5 class="mb-0">Carrito - 2 artículos</h5>
+                <h5 class="mb-0">Carrito</h5>
               </div>
 
-              <div class="card-body">
-
-                <div class="row py-3 mb-2">
-                  <div class="col-4 mb-1">
-                    <!-- imagen -->
-                    <div class="bg-image rounded">
-                      <img class="w-75" src="../img/BellezaOscura.png" alt="Belleza oscura">
-                    </div>
-                  </div>
-                  <div class="col-6">
-                    <p><strong>Belleza Oscura</strong></p>
-                    <p>Autor: Jessica Rivas</p>
-                    <p>Precio: <b>$8000</b></p>
-                    <p>Editorial: <b>MONTENA</b></p>
-                    <input type="number" name="" id="" placeholder="Cantidad">
-                    <button type="button" class="btn btn-danger btn-sm me-1 mb-2">Eliminar <i class="fa-solid fa-trash-can"></i></button>
-                  </div>
-     
-                </div>
-                <hr>
-                <div class="row py-3 mb-3">
-                  <div class="col-4 mb-1">
-                    <div class="bg-image rounded">
-                      <img class="w-75" src="/img/CadaHerida.png" alt="CadaHerida">
-                    </div>
-                  </div>
-                  <div class="col-6">
-                    <p><strong>Cada herida del alma</strong></p>
-                    <p>Autor: Maria Border</p>
-                    <p>Precio: <b>$6000</b></p>
-                    <p>Editorial: <b>PLAZA & JANES</b></p>
-                    <input type="number" name="" id="" placeholder="Cantidad">
-                    
-                    <button type="button" class="btn btn-danger btn-sm me-1 mb-2">Eliminar <i class="fa-solid fa-trash-can"></i></button>
-                  </div>
-
-                </div>              
-                
+              <div class="card-body" id="lista-compra">     
+          
               </div>
 
             </div>
@@ -132,18 +47,25 @@
                 <ul class="list-group list-group-flush">
                   <li class="list-group-item d-flex justify-content-between align-items-center border-0 px-0 pb-0">
                     Productos
-                    <span>$1500</span>
+                    <span id="sub-total"></span>
                   </li>
                   <li class="list-group-item d-flex justify-content-between align-items-center border-0 px-0 pb-0">
                     Envío
                     <span>Gratis</span>
+                  </li>
+
+                  <li class="list-group-item d-flex justify-content-between align-items-center border-0 px-0 pb-0">
+                    <div>
+                      <strong>IVA</strong>
+                    </div>
+                    <p><strong id="iva"></strong></p>
                   </li>
                   
                   <li class="list-group-item d-flex justify-content-between align-items-center border-0 px-0 pb-0">
                     <div>
                       <strong>Total de la compra</strong>
                     </div>
-                    <span><strong>$15000</strong></span>
+                    <span><strong id="total"></strong></span>
                   </li>
                 </ul>
                 <button type="button" class="btn btn-outline-success btn-rounded" data-mdb-ripple-color="Gray">Pagar</button>
